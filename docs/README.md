@@ -1,9 +1,12 @@
 # A Working Example USB Driver on iPadOS based on  USBDriverKit
+
+[GitHub Repositories](https://github.com/M-Cortana/USBDriverKit-Example)
+
 Copyright © 2025, Zonghua Ouyang All Rights Reserved.
 
 版权 © 2025, Zonghua Ouyang 保留所有权利。
 
-****
+********
 
 ## How to Run the Example Code
 ### What Do You Need
@@ -26,7 +29,7 @@ Apple Developer account is needed to compile the project, it can be registered a
 ### Prepareation for Running the Example
 Before compile the iPad App, you need to register your iPad on your Apple Developer account portal.
 
-****
+********
 
 ## Introduction to Universal Serial Bus 2.0 (USB 2.0)
 This section will only covers the USB 2.0 specification, specifically Chapter 8 to Chapter 9. Although USB 3 and even USB 4 are popular on today's electonics market, the USB 2.0 protocol is already complex enough to understand. Also, as of May 2025, no STM32 supports USB 3. 
@@ -355,21 +358,9 @@ All the descriptor are defined in the `usb_descriptor.h`
 | [WireShark.pdf](WireShark.pdf) |
 |---|
 
-<div id="adobe-dc-view" style="height: 500px"></div>
-<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "cb2bd093f630412f8cc2b007189ce8fc", divId: "adobe-dc-view"});
-		adobeDCView.previewFile({
-			content:{location: {url: "WireShark.pdf"}},
-			metaData:{fileName: "WireShark.pdf"}
-		}, {embedMode: "SIZED_CONTAINER"});
-	});
-</script>
-
 The example above is a real example captured by WireShark. The original WireShark data is in the `WireShark.pcapng`
 
-****
+********
 
 ## Introduction to USBDriverKit
 Before reading this section, I strongly recommand you to read three articles from Apple first.
