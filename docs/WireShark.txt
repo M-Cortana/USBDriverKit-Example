@@ -1,0 +1,434 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       host                  1.1.0                 USB      48     GET DESCRIPTOR Request DEVICE
+
+Frame 1: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: DEVICE (0x01)
+    Language Id: no language specified (0x0000)
+    wLength: 8
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.002439       1.1.0                 host                  USB      48     GET DESCRIPTOR Response DEVICE
+
+Frame 2: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+DEVICE DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x01 (DEVICE)
+    bcdUSB: 0x0200
+    bDeviceClass: Device (0x00)
+    bDeviceSubClass: 0
+    bDeviceProtocol: 0 (Use class code info from Interface Descriptors)
+    bMaxPacketSize0: 64
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.002809       host                  1.1.0                 USB      48     GET DESCRIPTOR Request DEVICE
+
+Frame 3: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: DEVICE (0x01)
+    Language Id: no language specified (0x0000)
+    wLength: 18
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.006422       1.1.0                 host                  USB      58     GET DESCRIPTOR Response DEVICE
+
+Frame 4: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface XHC1, id 0
+USB URB
+DEVICE DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x01 (DEVICE)
+    bcdUSB: 0x0200
+    bDeviceClass: Device (0x00)
+    bDeviceSubClass: 0
+    bDeviceProtocol: 0 (Use class code info from Interface Descriptors)
+    bMaxPacketSize0: 64
+    idVendor: Inside Out Networks (0x0648)
+    idProduct: Unknown (0xeeee)
+    bcdDevice: 0xeeee
+    iManufacturer: 1
+    iProduct: 2
+    iSerialNumber: 3
+    bNumConfigurations: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.006623       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 5: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 2
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.010427       1.1.0                 host                  USB      42     GET DESCRIPTOR Response STRING
+
+Frame 6: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 32
+    bDescriptorType: 0x03 (STRING)
+    bString: 
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.010478       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 7: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 32
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.014417       1.1.0                 host                  USB      72     GET DESCRIPTOR Response STRING
+
+Frame 8: 72 bytes on wire (576 bits), 72 bytes captured (576 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 32
+    bDescriptorType: 0x03 (STRING)
+    bString: STM32 USB 测试开发板
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.014514       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 9: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 2
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.018438       1.1.0                 host                  USB      42     GET DESCRIPTOR Response STRING
+
+Frame 10: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 8
+    bDescriptorType: 0x03 (STRING)
+    bString: 
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.018507       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 11: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 8
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.022420       1.1.0                 host                  USB      48     GET DESCRIPTOR Response STRING
+
+Frame 12: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 8
+    bDescriptorType: 0x03 (STRING)
+    bString: 欧大佬
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.022516       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 13: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 2
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.026419       1.1.0                 host                  USB      42     GET DESCRIPTOR Response STRING
+
+Frame 14: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 28
+    bDescriptorType: 0x03 (STRING)
+    bString: 
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.026458       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 15: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 28
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.030422       1.1.0                 host                  USB      68     GET DESCRIPTOR Response STRING
+
+Frame 16: 68 bytes on wire (544 bits), 68 bytes captured (544 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 28
+    bDescriptorType: 0x03 (STRING)
+    bString: USB2333333333
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.030532       host                  1.1.0                 USB      48     GET DESCRIPTOR Request CONFIGURATION
+
+Frame 17: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: CONFIGURATION (0x02)
+    Language Id: no language specified (0x0000)
+    wLength: 9
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.034428       1.1.0                 host                  USB      49     GET DESCRIPTOR Response CONFIGURATION
+
+Frame 18: 49 bytes on wire (392 bits), 49 bytes captured (392 bits) on interface XHC1, id 0
+USB URB
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 32
+    bNumInterfaces: 1
+    bConfigurationValue: 1
+    iConfiguration: 4
+    Configuration bmAttributes: 0x80  NOT SELF-POWERED  NO REMOTE-WAKEUP
+    bMaxPower: 200  (400mA)
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.034461       host                  1.1.0                 USB      48     GET DESCRIPTOR Request CONFIGURATION
+
+Frame 19: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: CONFIGURATION (0x02)
+    Language Id: no language specified (0x0000)
+    wLength: 32
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 0.038418       1.1.0                 host                  USB      72     GET DESCRIPTOR Response CONFIGURATION
+
+Frame 20: 72 bytes on wire (576 bits), 72 bytes captured (576 bits) on interface XHC1, id 0
+USB URB
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 32
+    bNumInterfaces: 1
+    bConfigurationValue: 1
+    iConfiguration: 4
+    Configuration bmAttributes: 0x80  NOT SELF-POWERED  NO REMOTE-WAKEUP
+    bMaxPower: 200  (400mA)
+INTERFACE DESCRIPTOR (0.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 0
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 5
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x01  OUT  Endpoint:1
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 255
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x81  IN  Endpoint:1
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 255
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 0.054906       host                  1.1.0                 USB      48     SET CONFIGURATION Request
+
+Frame 21: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x00
+    bRequest: SET CONFIGURATION (9)
+    bConfigurationValue: 1
+    wIndex: 0 (0x0000)
+    wLength: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 0.056476       1.1.0                 host                  USB      40     SET CONFIGURATION Response
+
+Frame 22: 40 bytes on wire (320 bits), 40 bytes captured (320 bits) on interface XHC1, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 0.056630       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 23: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x05
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 2
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 0.060574       1.1.0                 host                  USB      42     GET DESCRIPTOR Response STRING
+
+Frame 24: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 0.060688       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 25: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x05
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 26
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 0.064476       1.1.0                 host                  USB      66     GET DESCRIPTOR Response STRING
+
+Frame 26: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 默认 Interface
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 0.094519       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 27: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: STRING (0x03)
+    Language Id: no language specified (0x0000)
+    wLength: 255
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 0.097466       1.1.0                 host                  USB      44     GET DESCRIPTOR Response STRING
+
+Frame 28: 44 bytes on wire (352 bits), 44 bytes captured (352 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 4
+    bDescriptorType: 0x03 (STRING)
+    wLANGID: Chinese (Macau SAR) (0x1404)
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 0.098513       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 29: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: Chinese (Macau SAR) (0x1404)
+    wLength: 255
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 0.098554       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 30: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: Chinese (Macau SAR) (0x1404)
+    wLength: 255
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 0.098574       host                  1.1.0                 USB      48     GET DESCRIPTOR Request STRING
+
+Frame 31: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: Chinese (Macau SAR) (0x1404)
+    wLength: 255
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 0.101456       1.1.0                 host                  USB      48     GET DESCRIPTOR Response STRING
+
+Frame 32: 48 bytes on wire (384 bits), 48 bytes captured (384 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 8
+    bDescriptorType: 0x03 (STRING)
+    bString: 欧大佬
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 0.105457       1.1.0                 host                  USB      72     GET DESCRIPTOR Response STRING
+
+Frame 33: 72 bytes on wire (576 bits), 72 bytes captured (576 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 32
+    bDescriptorType: 0x03 (STRING)
+    bString: STM32 USB 测试开发板
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 0.109463       1.1.0                 host                  USB      68     GET DESCRIPTOR Response STRING
+
+Frame 34: 68 bytes on wire (544 bits), 68 bytes captured (544 bits) on interface XHC1, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 28
+    bDescriptorType: 0x03 (STRING)
+    bString: USB2333333333

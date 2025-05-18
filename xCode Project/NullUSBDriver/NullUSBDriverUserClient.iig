@@ -1,0 +1,32 @@
+//
+//  NullUSBDriverUserClient.iig
+//  USB Test
+//
+//  Created by 欧阳宗桦 on 5/15/25.
+//
+
+#ifndef NullUSBDriverUserClient_h
+#define NullUSBDriverUserClient_h
+
+#include <Availability.h>
+#include <DriverKit/IOUserClient.iig>
+#include <DriverKit/IOTimerDispatchSource.iig>
+
+class NullUSBDriverUserClient: public IOUserClient {
+
+protected:
+    kern_return_t CommunicateWithUserClientTest(IOUserClientMethodArguments* arguments) LOCALONLY;
+    static kern_return_t StaticAsyncCommunicateWithDriverTest(OSObject* target, void* reference, IOUserClientMethodArguments* arguments) LOCALONLY;
+    kern_return_t AsyncCommunicateWithDriverTest(IOUserClientMethodArguments* arguments) LOCALONLY;
+    kern_return_t USBTransmit(IOUserClientMethodArguments *arguments) LOCALONLY;
+public:
+    virtual bool init(void) override;
+    virtual kern_return_t Start(IOService* provider) override;
+    virtual kern_return_t Stop(IOService* provider) override;
+    virtual void free(void) override;
+
+    virtual kern_return_t ExternalMethod(uint64_t selector, IOUserClientMethodArguments* arguments, const IOUserClientMethodDispatch* dispatch, OSObject* target, void* reference) override;
+    virtual void TimerCallbackTest(OSAction* action, uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
+};
+
+#endif /* NullUSBDriverUserClient_h */
