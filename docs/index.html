@@ -1,0 +1,833 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/ouyangzonghua/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="a-working-example-usb-driver-on-ipados-based-on--usbdriverkit">A Working Example USB Driver on iPadOS based on  USBDriverKit </h1>
+<p><a href="https://github.com/M-Cortana/USBDriverKit-Example">GitHub Repositories</a></p>
+<p>Copyright © 2025, Zonghua Ouyang All Rights Reserved.</p>
+<p>版权 © 2025, Zonghua Ouyang 保留所有权利。</p>
+<hr>
+<h2 id="how-to-run-the-example-code">How to Run the Example Code </h2>
+<h3 id="what-do-you-need">What Do You Need </h3>
+<ul>
+<li>iPad with an M-Series Chip</li>
+<li>USB Cable</li>
+<li>Apple Developer Account</li>
+<li>FK750M1-VBT6 STM32 Board</li>
+<li>ST-Link for Downloading the Program to STM32</li>
+</ul>
+<p>An iPad with an M-series chip is necessary since per Apple</p>
+<blockquote>
+<p>The base DriverKit framework is available in macOS for Apple silicon and Intel-based Mac computers, and in iPadOS for devices with an M-series chip. The availability of family frameworks like USBDriverKit and AudioDriverKit varies by platform.</p>
+</blockquote>
+<blockquote>
+<p>USBDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.</p>
+</blockquote>
+<p>The FK750M1-VBT6 STM32 Board can be easily aquired, figures below are some sources.</p>
+<center><img src="BoardCN.PNG" width="25%"><img src="BoardEN.PNG" width="25%"></center>    
+<p>Apple Developer account is needed to compile the project, it can be registered at <a href="https://developer.apple.com">Apple Developer</a>. It usually costs about $100 per year.</p>
+<h3 id="prepareation-for-running-the-example">Prepareation for Running the Example </h3>
+<p>Before compile the iPad App, you need to register your iPad on your Apple Developer account portal.</p>
+<hr>
+<h2 id="introduction-to-universal-serial-bus-20-usb-20">Introduction to Universal Serial Bus 2.0 (USB 2.0) </h2>
+<p>This section will only covers the USB 2.0 specification, specifically Chapter 8 to Chapter 9. Although USB 3 and even USB 4 are popular on today's electonics market, the USB 2.0 protocol is already complex enough to understand. Also, as of May 2025, no STM32 supports USB 3.</p>
+<p>This section is intended for new USBers who have little or no background knowledge of USB. For simplicity, this section intentionally omit a lot of concept. For complete information refer to Universal Serial Bus Specification Revision 2.0.</p>
+<h2 id="architectural-overview">Architectural Overview </h2>
+<h3 id="terminology">Terminology </h3>
+<h4 id="classification-of-usb-devices">Classification of USB devices. </h4>
+<ul>
+<li>USB Host. e.g. the iPad in the example, Computers, Laptops.</li>
+<li>USB Device<br>
+- Hubs, which provide additional attachment points to the USB.<br>
+- Functions, e.g. the STM32 Board in the example, Keyboard, Joystick</li>
+</ul>
+<p>In the text below, I will use USB Device (with capital letter "D") to refer hubs and functions (on oppose to USB Host), and use USB device to indicate all electronics with a USB interface (all include hosts, hubs and functions).</p>
+<p>It is worth to mention that a lot of devices have both capabilities to be attached as functions and hosts. The usb port on these kind of devices are called On-the-go (OTG) (USB Type-B) or Dual role port (DRP) (USB Type-C). For example, an Android phone. If it is connected to a computer it is a function. If a mouse or a keyboard is connected to it, it is a host. The STM32 used in this example also can be programmed as a host.</p>
+<h4 id="data-rates">Data Rates </h4>
+<ul>
+<li>USB High-Speed: 480 Mbit/s</li>
+<li>USB Full-Speed: 12 Mbit/s</li>
+<li>USB Low-Speed: 1.5 Mbit/s</li>
+</ul>
+<p>In this example, we will use USB full-speed of 12 Mbit/s, although USB high-speed is supported by the STM32, it requires an external PHY chip that is not on the PCB.</p>
+<h3 id="communication-flow">Communication Flow </h3>
+<center><img src="USBArchitecture.png" width="75%"><p>Figure 5-9 of Universal Serial Bus Specification Revision 2.0 on Page 32</p></center>
+<blockquote>
+<p>Even though the physical and logical topology of the USB reflects the shared nature of the bus, client software (CSw) manipulating a USB function interface is presented with the view that it deals only with its interface(s) of interest. Client software for USB functions must use USB software programming interfaces to manipulate their functions as opposed to directly manipulating their functions via memory or I/O accesses as with other buses (e.g., PCI, EISA, PCMCIA, etc.).</p>
+</blockquote>
+<p>This is very important to write a USB driver. Although we only have one interface in the example code, there are a bunch of USB devices with multiple interfacese. For example, a keyboard with a trackpad, keyboared and trackpad are two interfaces. Usually, we write a driver for interfaces, not for devices.</p>
+<center><img src="USBCommunicationFlow.png" width="50%"><p>Figure 5-10 of Universal Serial Bus Specification Revision 2.0 on Page 33</p></center>
+<p>Figure above illustrage the relationship between endpoints, pipes whitin a given interface. We only have one endpoints (exclude the default control endpoint zero) in this example code.</p>
+<h2 id="protocol-layer">Protocol Layer </h2>
+<h3 id="field-format">Field Format </h3>
+<h4 id="packet-identifier-pid-field">Packet Identifier (PID) Field </h4>
+<center><img src="PIDFormat.png" width="40%"><p>Figure 8-1 of Universal Serial Bus Specification Revision 2.0 on Page 195</p> </center>
+<p>The table below only describe the PID types that will be covered in this section. For the complete table of PID types, refer to Table 8-1 Universal Serial Bus Specification Revision 2.0 on Page 196.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">PID Type</th>
+<th style="text-align:left">PID Name</th>
+<th style="text-align:left">PID</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Token</td>
+<td style="text-align:left">OUT</td>
+<td style="text-align:left">0001B</td>
+<td style="text-align:left">Host to Function Transaction</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">IN</td>
+<td style="text-align:left">1001B</td>
+<td style="text-align:left">Functioin to Host Transaction</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">SETUP</td>
+<td style="text-align:left">1101B</td>
+<td style="text-align:left">Host to Function Transaction for SETUP to a Control Pipe</td>
+</tr>
+<tr>
+<td style="text-align:left">Data</td>
+<td style="text-align:left">DATA0</td>
+<td style="text-align:left">0011B</td>
+<td style="text-align:left">Data Packet PID Even</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">DATA1</td>
+<td style="text-align:left">1011B</td>
+<td style="text-align:left">Data Packet PID Odd</td>
+</tr>
+<tr>
+<td style="text-align:left">Handshake</td>
+<td style="text-align:left">ACK</td>
+<td style="text-align:left">0010B</td>
+<td style="text-align:left">Receiver accepts error-free data packet</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">NAK</td>
+<td style="text-align:left">1010B</td>
+<td style="text-align:left">Receiving device cannot accept data or transmitting device cannot send data for now.</td>
+</tr>
+<tr>
+<td style="text-align:left">Special</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="address-addr-field">Address (ADDR) Field </h4>
+<p>The function address (ADDR) field specifies the function. Each function will be assigned a address when attached to the host.</p>
+<center><img src="ADDRFormat.png" width="37%"><p>Figure 8-2 of Universal Serial Bus Specification Revision 2.0 on Page 197</p> </center>
+<h4 id="endpoint-endp-field">Endpoint (ENDP) Field </h4>
+<p>Endpoint field includes the endpoint number of which the packet intend to communicate with.</p>
+<center><img src="ENDPFormat.png" width="25%"><p>Figure 8-3 of Universal Serial Bus Specification Revision 2.0 on Page 197</p> </center>
+<h4 id="data-field">Data Field </h4>
+<p>Data field includes the data.</p>
+<center><img src="DataFormat.png" width="50%"><p>Figure 8-4 of Universal Serial Bus Specification Revision 2.0 on Page 198</p> </center>
+<h4 id="cyclic-redundancy-checks-crc-field">Cyclic Redundancy Checks (CRC) field </h4>
+<p>Contains CRC for error checking. Two types of CRCs are used, CRC5 for token packets and CRC16 for data packets.</p>
+<h3 id="packet-format">Packet Format </h3>
+<h4 id="token-packets">Token Packets </h4>
+<table>
+<thead>
+<tr>
+<th>PID</th>
+<th>ADDR</th>
+<th>ENDP</th>
+<th>CRC5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 bits</td>
+<td>7 bits</td>
+<td>4 bits</td>
+<td>5 bits</td>
+</tr>
+</tbody>
+</table>
+<p>The PID of a token packets can be OUT, IN and SETUP.</p>
+<h4 id="data-packets">Data Packets </h4>
+<table>
+<thead>
+<tr>
+<th>PID</th>
+<th>DATA</th>
+<th>CRC16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 bits</td>
+<td>8-8192 bits</td>
+<td>16 bits</td>
+</tr>
+</tbody>
+</table>
+<p>The PID of a data packets can be DATA0 and DATA1. They need to be used interleaved, i.e. if the previous packet is DATA0, then DATA1 should be used for this packet and DATA0 for the next packet.</p>
+<h4 id="handshake-packets">Handshake Packets </h4>
+<table>
+<thead>
+<tr>
+<th>PID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 bits</td>
+</tr>
+</tbody>
+</table>
+<p>ACK indicates that the data packet was received properly. NAK indicates that a function is still processing and not able accept data (OUT) or transmit data (IN). If NAK is returned, host will keep request until an ACK is received. If the data is corrupted, nothing is returned. Host will never return an NAK.</p>
+<h3 id="transaction-packet-sequence">Transaction Packet Sequence </h3>
+<p>Every transaction is initiated by host.</p>
+<h4 id="control-transfers">Control Transfers </h4>
+<p>Each control transfers have 3 or 2 stages, the setup stage, the data stage (optional), and the status stage.</p>
+<p>In the first stage, the Setup packet is sent to the device. In the optional second stage, data is transferred between the host and the device. In the final stage, status is transferred between the host and the device.</p>
+<h5 id="setup-stage">Setup Stage </h5>
+<center><img src="ControlSetup.png" width="30%"><p>Figure 8-36 of Universal Serial Bus Specification Revision 2.0 on Page 226</p></center>
+<p>If the function receives the data properlly it returns ACK, otherwise do nothing. The data contained in the data packet include the standard device requests that will disscussed later.</p>
+<h5 id="data-stage">Data Stage </h5>
+<p>The optional Data Stage consists of IN or OUT transfers. The setup stage indicates the amount of data to be transmitted in this stage.</p>
+<p>The data stage has two different scenarios depending upon the direction of data transfer. IN and OUT. IN means functions need to trasnsfer some data to host, and OUT means functions need to accept some data from host. The type of IN or OUT is also indicated in the setup stage.</p>
+<center><img src="ControlData.png" width="60%"><p>Figure Described Two Type of Data Stage. The box with blue background is sent by host, otherwise sent by function</p></center>
+<h5 id="status-stage">Status Stage </h5>
+<p>The status stage also has two different scenarios. If the host issued an IN packet in the data stage, then the host will send an OUT packet in the status stage. If the host issued an OUT packet in the data stage, or there is no data stage, then the host will send an IN packet in the status stage.</p>
+<center><img src="ControlStatus.png" width="60%"><p>Figure Described Two Type of Status Stage. The box with blue background is sent by host, otherwise sent by function</p></center>
+<h5 id="example">Example </h5>
+<center><img src="ExampleSteup.png" width="100%"><p>An Example of a Complete Control Transfer</p></center>
+The example above is acquired using a logic analyzer. You can try to identify each stage in the example above.
+<h5 id="code-implementation">Code Implementation </h5>
+<p>When the STM32 received a setup token packet, the <code>HAL_PCD_SetupStageCallback()</code> function will be called once the setup stage is finished. The USB hardware on chip will automatically check the CRC and return the ACK, so no code is needed. The data received during the setup stage is stored in the <code>hpcd-&gt;Setup</code>. Code below is in the <code>usb.c</code>.</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-void">void</span> <span class="token function">HAL_PCD_SetupStageCallback</span><span class="token punctuation">(</span>PCD_HandleTypeDef <span class="token operator">*</span>hpcd<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"HAL_PCD_SetupStageCallback()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	CSM_USB_RequestTypeDef req <span class="token operator">=</span> <span class="token function">CSM_USB_ParseRequest</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">uint8_t</span><span class="token operator">*</span><span class="token punctuation">)</span> hpcd<span class="token operator">-&gt;</span>Setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">LogReq</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-switch">switch</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>bmRequestType <span class="token operator">&amp;</span> <span class="token number">0x1F</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword keyword-case">case</span> <span class="token number">0</span><span class="token operator">:</span>
+			<span class="token function">CSM_USB_DevReqHandle</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-case">case</span> <span class="token number">1</span><span class="token operator">:</span>
+			<span class="token function">CSM_USB_IntReqHandle</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-case">case</span> <span class="token number">2</span><span class="token operator">:</span>
+			<span class="token function">CSM_USB_EpReqHandle</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-default">default</span><span class="token operator">:</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>The data stage is implemented by using <code>HAL_PCD_EP_Transmit()</code>, for example</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> USB_DeviceDescriptor<span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">*</span>USB_DeviceDescriptor<span class="token punctuation">,</span> req<span class="token punctuation">.</span>wLength<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>The status stage is implemented by using <code>HAL_PCD_EP_Receive()</code> or <code>HAL_PCD_EP_Transmit()</code> with a zero length, for example</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h4 id="data-bulk-and-interrupt-transfers">Data (Bulk and Interrupt) Transfers </h4>
+<p>Bulk and data transfers have exactly the same sequence, so I will call them data transfers. There is actually no interrupt in the USB 2.0 protocol, the interrupt transfer also needs host to poll the function.</p>
+<center><img src="ControlData.png" width="60%"><p>Figure Described Data Transfers. The box with blue background is sent by host, otherwise sent by function</p></center>
+<p>As you may noticed, the data transfer sequence is exactly the same as the data stage in control transfers.</p>
+<h5 id="code-implementation-1">Code Implementation </h5>
+<p>To receive a data, we first need to wait the connection to be made, and then call <code>HAL_PCD_EP_Receive()</code>. Code below is in the <code>main.c</code>.</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span>CSM_USB_Ivars<span class="token punctuation">.</span>USBState <span class="token operator">!=</span> CSM_USB_STATE_CONFIGURED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	  <span class="token comment">//Do Nothing But Wait</span>
+<span class="token punctuation">}</span>
+<span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>CSM_USB_Ivars<span class="token punctuation">.</span>pData<span class="token punctuation">,</span> <span class="token number">0x01</span><span class="token punctuation">,</span> CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveBuffer<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>Once the data is successfully received by the STM32, <code>HAL_PCD_DataOutStageCallback()</code> will be called. The <code>HAL_PCD_DataOutStageCallback()</code> is implemented in <code>usb.c</code></p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-void">void</span> <span class="token function">HAL_PCD_DataOutStageCallback</span><span class="token punctuation">(</span>PCD_HandleTypeDef <span class="token operator">*</span>hpcd<span class="token punctuation">,</span> <span class="token class-name">uint8_t</span> epnum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"HAL_PCD_DataOutStageCallback(epnum = %u)"</span><span class="token punctuation">,</span> epnum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	ivars<span class="token operator">-&gt;</span>USBReceiveInterrupt <span class="token operator">=</span> <span class="token punctuation">(</span>hpcd<span class="token operator">-&gt;</span>OUT_ep<span class="token punctuation">[</span>epnum<span class="token punctuation">]</span><span class="token punctuation">.</span>xfer_count<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0x80000000</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>The program in the infinite loop will sense the change of <code>USBReceiveInterrupt</code> and switch the LED as well as start a new receive session. Code below is in <code>main.c</code></p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveInterrupt <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveBuffer <span class="token operator">==</span> <span class="token number">0xEA</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token function">HAL_GPIO_WritePin</span><span class="token punctuation">(</span>LED_GPIO_Port<span class="token punctuation">,</span> LED_Pin<span class="token punctuation">,</span> GPIO_PIN_RESET<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">*</span>CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveBuffer <span class="token operator">==</span> <span class="token number">0xFA</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token function">HAL_GPIO_WritePin</span><span class="token punctuation">(</span>LED_GPIO_Port<span class="token punctuation">,</span> LED_Pin<span class="token punctuation">,</span> GPIO_PIN_SET<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>CSM_USB_Ivars<span class="token punctuation">.</span>pData<span class="token punctuation">,</span> <span class="token number">0x01</span><span class="token punctuation">,</span> CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveBuffer<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                CSM_USB_Ivars<span class="token punctuation">.</span>USBReceiveInterrupt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="usb-device-framework">USB Device Framework </h2>
+<h3 id="usb-device-requests">USB Device Requests </h3>
+<center><img src="SetupDataFormat.png" width="75%"><p>Table 9-2 of Universal Serial Bus Specification Revision 2.0 on Page 248</p></center>
+<p>The table above is used to parse the request in the sample code. The code below is in the <code>usb.c</code></p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code>CSM_USB_RequestTypeDef <span class="token function">CSM_USB_ParseRequest</span><span class="token punctuation">(</span><span class="token class-name">uint8_t</span> <span class="token operator">*</span>req<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	CSM_USB_RequestTypeDef res<span class="token punctuation">;</span>
+	res<span class="token punctuation">.</span>bmRequestType <span class="token operator">=</span> <span class="token operator">*</span>req<span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	res<span class="token punctuation">.</span>bRequest <span class="token operator">=</span> <span class="token operator">*</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	res<span class="token punctuation">.</span>wValue <span class="token operator">=</span> <span class="token function">SWAPBYTE</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	res<span class="token punctuation">.</span>wIndex <span class="token operator">=</span> <span class="token function">SWAPBYTE</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	req<span class="token operator">++</span><span class="token punctuation">;</span>
+	res<span class="token punctuation">.</span>wLength <span class="token operator">=</span> <span class="token function">SWAPBYTE</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-return">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>Since the USB use LSB first order, we need to use <code>SWAPBYTE()</code> function to process the data.</p>
+<center><img src="StandardDeviceRequests.png" width="75%"><p>Simplified Table 9-3 of Universal Serial Bus Specification Revision 2.0 on Page 250</p></center>
+<p>The table above only shows the requests that been handled by the sample code. The code below is request handler of requests. The "Dev" in the function name <code>CSM_USB_DevReqHandle()</code> means the recipient of the request is device, this is indicated in the <code>bmRequestType</code> field. All three implemeted requests have a recipient of device.</p>
+<pre data-role="codeBlock" data-info="C" class="language-c C"><code><span class="token keyword keyword-void">void</span> <span class="token function">CSM_USB_DevReqHandle</span><span class="token punctuation">(</span>PCD_HandleTypeDef <span class="token operator">*</span>hpcd<span class="token punctuation">,</span> CSM_USB_RequestTypeDef req<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token class-name">uint8_t</span> <span class="token operator">*</span>TxBuf <span class="token operator">=</span> ivars<span class="token operator">-&gt;</span>USBSetupTxBuffer<span class="token punctuation">;</span>
+	<span class="token keyword keyword-switch">switch</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>bRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword keyword-case">case</span> CSM_USB_REQUEST_SET_ADDRESS<span class="token operator">:</span>
+			<span class="token function">HAL_PCD_SetAddress</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> req<span class="token punctuation">.</span>wValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-case">case</span> CSM_USB_REQUEST_GET_DESCRIPTOR<span class="token operator">:</span>
+			<span class="token keyword keyword-switch">switch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>wValue <span class="token operator">&amp;</span> <span class="token number">0xFF00</span><span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword keyword-case">case</span> CSM_USB_DESCRIPTOR_DEVICE<span class="token operator">:</span>
+					<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> USB_DeviceDescriptor<span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">*</span>USB_DeviceDescriptor<span class="token punctuation">,</span> req<span class="token punctuation">.</span>wLength<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+				<span class="token keyword keyword-case">case</span> CSM_USB_DESCRIPTOR_STRING<span class="token operator">:</span>
+					TxBuf<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">CSM_USB_Strlen16</span><span class="token punctuation">(</span>USB_StringDescriptor<span class="token punctuation">[</span>req<span class="token punctuation">.</span>wValue <span class="token operator">&amp;</span> <span class="token number">0xFF</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+					TxBuf<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> CSM_USB_DESCRIPTOR_STRING<span class="token punctuation">;</span>
+					<span class="token function">memcpy</span><span class="token punctuation">(</span>TxBuf <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">,</span> USB_StringDescriptor<span class="token punctuation">[</span>req<span class="token punctuation">.</span>wValue <span class="token operator">&amp;</span> <span class="token number">0xFF</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">*</span>TxBuf <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> TxBuf<span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token operator">*</span>TxBuf<span class="token punctuation">,</span> req<span class="token punctuation">.</span>wLength<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+				<span class="token keyword keyword-case">case</span> CSM_USB_DESCRIPTOR_CONFIGURATION<span class="token operator">:</span>
+					<span class="token function">memcpy</span><span class="token punctuation">(</span>TxBuf<span class="token punctuation">,</span> USB_ConfigurationDescriptor<span class="token punctuation">,</span> <span class="token operator">*</span>USB_ConfigurationDescriptor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">memcpy</span><span class="token punctuation">(</span>TxBuf <span class="token operator">+</span> <span class="token operator">*</span>USB_ConfigurationDescriptor<span class="token punctuation">,</span> USB_InterfaceDescriptor<span class="token punctuation">,</span> <span class="token operator">*</span>USB_InterfaceDescriptor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">memcpy</span><span class="token punctuation">(</span>TxBuf <span class="token operator">+</span> <span class="token operator">*</span>USB_ConfigurationDescriptor <span class="token operator">+</span> <span class="token operator">*</span>USB_InterfaceDescriptor<span class="token punctuation">,</span> USB_EndpointDescriptor<span class="token punctuation">,</span> <span class="token operator">*</span><span class="token operator">*</span>USB_EndpointDescriptor <span class="token operator">*</span> CSM_USB_EP_COUNT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					TxBuf<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">*</span>TxBuf <span class="token operator">+</span> <span class="token operator">*</span>USB_InterfaceDescriptor <span class="token operator">+</span> <span class="token operator">*</span><span class="token operator">*</span>USB_EndpointDescriptor <span class="token operator">*</span> CSM_USB_EP_COUNT<span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> TxBuf<span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span>TxBuf<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> req<span class="token punctuation">.</span>wLength<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+				<span class="token keyword keyword-default">default</span><span class="token operator">:</span>
+					<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">HAL_PCD_EP_Receive</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+			<span class="token keyword keyword-case">case</span> CSM_USB_REQUEST_SET_CONFIGURATION<span class="token operator">:</span>
+				ivars<span class="token operator">-&gt;</span>USBState <span class="token operator">=</span> CSM_USB_STATE_CONFIGURED<span class="token punctuation">;</span>
+				<span class="token function">HAL_PCD_EP_Transmit</span><span class="token punctuation">(</span>hpcd<span class="token punctuation">,</span> <span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"CSM_USB_DevReqHandle() Finished"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>The SET_CONFIGURATION request indicates that the connection has been made, and the data transfer may begin. So we set the <code>USBState</code> to <code>CSM_USB_STATE_CONFIGURED</code>.</p>
+<h3 id="usb-descriptor">USB Descriptor </h3>
+<p>All the descriptor are defined in the <code>usb_descriptor.h</code></p>
+<h4 id="standard-device-descriptor">Standard Device Descriptor </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Size</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Value in Example Code</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">bLength</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Size of this descriptor in bytes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">bDescriptorType</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Constant</td>
+<td style="text-align:left">CSM_USB_DESCRIPTOR_DEVICE (1)</td>
+<td style="text-align:left">DEVICE Descriptor Type</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">bcdUSB</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">BCD</td>
+<td style="text-align:left">0x0200</td>
+<td style="text-align:left">USB Specification Release Number in Binary-Coded Decimal (i.e., 2.10 is 210H). This field identifies the release of the USB Specification with which the device and its descriptors are compliant.</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">bDeviceClass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Class</td>
+<td style="text-align:left">0x00</td>
+<td style="text-align:left">Class code (assigned by the USB-IF). Find more on <a href="https://www.usb.org/defined-class-codes">Defined Class Codes</a></td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">bDeviceSubClass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">SubClass</td>
+<td style="text-align:left">0x00</td>
+<td style="text-align:left">Subclass code (assigned by the USB-IF).</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">bDeviceProtocol</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Protocol</td>
+<td style="text-align:left">0x00</td>
+<td style="text-align:left">Protocol code (assigned by the USB-IF).</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">bMaxPacketSize</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">64</td>
+<td style="text-align:left">Maximum packet size for endpoint zero (only 8, 16, 32, or 64 are valid)</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">idVendor</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">ID</td>
+<td style="text-align:left">0x0648</td>
+<td style="text-align:left">Vendor ID (assigned by the USB-IF). The vendor id along with the product id is used to match the driver on iPad (which will be explained later). Technically if you are a company that designs USB products, you need to request a vendor id from USB-IF, it costs around $6,000. More informatioin can be found on <a href="https://www.usb.org/getting-vendor-id">Getting a Vendor ID</a></td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">idProduct</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">ID</td>
+<td style="text-align:left">0xEEEE</td>
+<td style="text-align:left">Product ID (assigned by the manufacturer)</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">bcdDevice</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">BCD</td>
+<td style="text-align:left">0xEEEE</td>
+<td style="text-align:left">Device release number in binary-coded decimal</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">iManufacturer</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index of string descriptor describing manufacturer</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">iProduct</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Index of string descriptor describing manufacturer</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">iSerialNumber</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">Index of string descriptor describing the device’s serial number</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">bNumConfigurations</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number of possible configurations</td>
+</tr>
+</tbody>
+</table>
+<h4 id="standard-configuration-descriptor">Standard Configuration Descriptor </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Size</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Value in Example Code</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">bLength</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Size of this descriptor in bytes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">bDescriptorType</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Constant</td>
+<td style="text-align:left">CSM_USB_DESCRIPTOR_CONFIGURATION (2)</td>
+<td style="text-align:left">CONFIGURATION Descriptor Type</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">wTotalLength</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">This field is calculated by the code before transmitting</td>
+<td style="text-align:left">Total length of data returned for this configuration. Includes the combined length of all descriptors (configuration, interface, endpoint, and class- or vendor-specific) returned for this configuration.</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">bNumInterfaces</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number of interfaces supported by this configuration</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">bConfigurationValue</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Value to use as an argument to the SET_CONFIGURATION request to select this configuration</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">iConfiguration</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Index of string descriptor describing this configuration</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">bmAttributes</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Bitmap</td>
+<td style="text-align:left">0x80 (Not Self-Powered, No Remote Wakeup)</td>
+<td style="text-align:left">Configuration characteristics D7: Reserved (set to one); D6: Self-powered; D5: Remote Wakeup; D4...0: Reserved (reset to zero)</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">bMaxPower</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">mA</td>
+<td style="text-align:left">200</td>
+<td style="text-align:left">Maximum power consumption of the USB device from the bus in this specific configuration when the device is fully operational. Expressed in 2 mA units (i.e., 50 = 100 mA).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="standard-interface-descriptor">Standard Interface Descriptor </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Size</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Value in Example Code</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">bLength</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Size of this descriptor in bytes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">bDescriptorType</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Constant</td>
+<td style="text-align:left">CSM_USB_DESCRIPTOR_INTERFACE (4)</td>
+<td style="text-align:left">INTERFACE Descriptor Type</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">bInterfaceNumber</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">Number of this interface. Zero-based value identifying the index in the array of concurrent interfaces supported by this configuration.</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">bAlternateSetting</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">Value used to select this alternate setting for the interface identified in the prior field</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">bNumEndpoints</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Number of endpoints used by this interface (excluding endpoint zero). If this value is zero, this interface only uses the Default Control Pipe</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">bInterfaceClass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Class</td>
+<td style="text-align:left">0xFF</td>
+<td style="text-align:left">Class code (assigned by the USB-IF). If this field is set to 0xFF, the interface class is vendor-specific. More on  <a href="https://www.usb.org/defined-class-codes">Defined Class Codes</a></td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">bInterfaceSubClass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">SubClass</td>
+<td style="text-align:left">0xFF</td>
+<td style="text-align:left">Subclass code (assigned by the USB-IF).</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">bInterfaceProtocol</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Protocol</td>
+<td style="text-align:left">0xFF</td>
+<td style="text-align:left">Protocol code (assigned by the USB). If this field is set to FFH, the device uses a vendor-specific protocol for this interface.</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">iInterface</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Index of string descriptor describing this interface</td>
+</tr>
+</tbody>
+</table>
+<h4 id="standard-endpoint-descriptor">Standard Endpoint Descriptor </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Size</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Value in Example Code for EP1OUT</th>
+<th style="text-align:left">Value in Example Code for EP1IN</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">bLength</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Size of this descriptor in bytes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">bDescriptorType</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Constant</td>
+<td style="text-align:left">CSM_USB_DESCRIPTOR_ENDPOINT (5)</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">ENDPOINT Descriptor Type</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">bEndpointAddress</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Endpoint</td>
+<td style="text-align:left">0x01 (Epnum: 1, Dir: OUT)</td>
+<td style="text-align:left">0x81 (Epnum: 1, Dir: IN)</td>
+<td style="text-align:left">The address is encoded as follows: Bit 3...0: The endpoint number; Bit 6...4: Reserved, reset to zero; Bit 7: Direction, ignored for control endpoints</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">bmAttributes</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Bitmap</td>
+<td style="text-align:left">0x02 (Bulk)</td>
+<td style="text-align:left">0x02 (Bulk)</td>
+<td style="text-align:left">Bits 1..0: Transfer Type; 00 = Control; 01 = Isochronous; 10 = Bulk; 11 = Interrupt</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">wMaxPacketSize</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">0x0200 (512)</td>
+<td style="text-align:left">0x0200 (512)</td>
+<td style="text-align:left">Maximum packet size this endpoint is capable of sending or receiving  bits 10..0 specify the maximum packet size (in bytes).</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">bInterval</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">0xFF (255 ms)</td>
+<td style="text-align:left">0xFF (255 ms)</td>
+<td style="text-align:left">Interval for polling endpoint for data transfers. Expressed in frames (1 ms unit).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="standard-string-descriptor">Standard String Descriptor </h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Size</th>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">bLength</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">Size of this descriptor in bytes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">bDescriptorType</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Constant</td>
+<td style="text-align:left">STRING Descriptor Type</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">bString</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">UTF-16LE encoded string</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-of-how-a-connection-is-extablished">Example of How a Connection is Extablished </h3>
+<table>
+<thead>
+<tr>
+<th><a href="WireShark.pdf">WireShark.pdf</a></th>
+</tr>
+</thead>
+</table>
+<p>The example above is a real example captured by WireShark. The original WireShark data is in the <code>WireShark.pcapng</code></p>
+<hr>
+<h2 id="introduction-to-usbdriverkit">Introduction to USBDriverKit </h2>
+<p>Before reading this section, I strongly recommand you to read three articles from Apple first.</p>
+<ul>
+<li><a href="https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk">Creating a Driver Using the DriverKit SDK</a></li>
+<li><a href="https://developer.apple.com/documentation/driverkit/creating-drivers-for-ipados">Creating drivers for iPadOS</a></li>
+<li><a href="https://developer.apple.com/documentation/driverkit/communicating-between-a-driverkit-extension-and-a-client-app">Communicating between a DriverKit extension and a client app</a></li>
+</ul>
+<h3 id="matching-the-usb-driver">Matching the USB Driver </h3>
+<p>When a USB device is attached to iPad, the iPadOS will start to search for a driver for this attached device. The searching is based on the information in the descriptor along with the <code>info.plist</code> within the driver.</p>
+<center><img src="InfoPlist.png" width="75%"><p>info.plist of the sample code</p></center>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Keys</th>
+<th style="text-align:left">Comments</th>
+<th style="text-align:left">Probe Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">idVendor + idProduct + bInterfaceNumber + bConfigurationValue + bcdDevice</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">100000</td>
+</tr>
+<tr>
+<td style="text-align:left">idVendor + idProduct + bInterfaceNumber + bConfigurationValue</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">90000</td>
+</tr>
+<tr>
+<td style="text-align:left">idVendor + bInterfaceSubClass + bInterfaceProtocol</td>
+<td style="text-align:left">Only if bInterfaceClass is 0xFF (vendor specific).</td>
+<td style="text-align:left">80000</td>
+</tr>
+<tr>
+<td style="text-align:left">idVendor + bInterfaceSubClass</td>
+<td style="text-align:left">Only if bInterfaceClass is 0xFF (vendor specific).</td>
+<td style="text-align:left">70000</td>
+</tr>
+<tr>
+<td style="text-align:left">bInterfaceClass + bInterfaceSubClass + bInterfaceProtocol</td>
+<td style="text-align:left">Only if bInterfaceClass is not 0xFF.</td>
+<td style="text-align:left">60000</td>
+</tr>
+<tr>
+<td style="text-align:left">bInterfaceClass + bInterfaceSubClass</td>
+<td style="text-align:left">Only if bInterfaceClass is not 0xFF.</td>
+<td style="text-align:left">50000</td>
+</tr>
+</tbody>
+</table>
+<p>If there is multiple drivers been matched with the attached device, iPadOS will chose the driver with the highest probe score.</p>
+<h3 id="entitlement">Entitlement </h3>
+<p>In order to communicate with the usb device, the <code>.entitlement</code> file is needed to be configured. Usually the xCode will automatically generate the <code>.entitlement</code> file, if you add the corresponding capabilities. The only entitlement we need to configure manually is the com.apple.developer.driverkit.transport.usb (displayed as DriverKit USB Transport).</p>
+<p>You can use a wildcard in the idVendor field when developing. But if you need to publish your app to the App Store, you need to change that wildcard into your own vendor id and request the entitlement from Apple. More information about requesting the entitlement can be found on <a href="https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development">Requesting Entitlements for DriverKit Development</a></p>
+<center><img src="Entitlement.png" width="50%"><p>NullUSBDriver.entitlement of the sample code</p></center>
+<h3 id="structure-of-the-driver">Structure of the Driver </h3>
+<p>If you have read the article, <a href="https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk">Creating a Driver Using the DriverKit SDK</a>, mentioned before, I believed you had some basic understading of the life cycle.</p>
+<p>The example app is composed with two parts, the user app and the driver. The driver is also divided into two parts, NullUSBDriver and NullUSBDriverUserClient.</p>
+<p>When the USB device is connected to iPad, the iPadOS will search for the driver and call <code>Start()</code> in the <code>NullUSBDriver.cpp</code>. When disconnected, <code>Stop()</code> will be called.</p>
+<p>When the user app calling the <code>IOServiceOpen()</code> function,</p>
+<pre data-role="codeBlock" data-info="CPP" class="language-cpp CPP"><code>ret <span class="token operator">=</span> <span class="token function">IOServiceOpen</span><span class="token punctuation">(</span>device<span class="token punctuation">,</span> mach_task_self_<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>connection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>the <code>NewUserClient()</code> method within the <code>NullUSBDriver.cpp</code> will be called. In the <code>NewUserClient()</code> method, it calls <code>Create()</code>.</p>
+<pre data-role="codeBlock" data-info="CPP" class="language-cpp CPP"><code>ret <span class="token operator">=</span> <span class="token function">Create</span><span class="token punctuation">(</span><span class="token keyword keyword-this">this</span><span class="token punctuation">,</span> <span class="token string">"UserClientProperties"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>client<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>Once calling the <code>Create()</code>, the system will call <code>Start()</code> in the <code>NullUSBDriverUserClient.cpp</code>.</p>
+<center><img src="DriverStructure.png" width="75%"><p>Structure Overview</p></center>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
